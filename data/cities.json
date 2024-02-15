@@ -1,0 +1,38 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": "73930385"
+    },
+    {
+      "id": "0261",
+      "cityName": "Pulgar",
+      "date": "2024-02-15T06:41:05.811Z",
+      "notes": "not",
+      "country": "Spain",
+      "position": {
+        "lat": "39.68620667258138",
+        "lng": "-4.154909767380566"
+      }
+    },
+    {
+      "id": "5fd4",
+      "cityName": "Budia",
+      "date": "2024-02-15T07:17:20.954Z",
+      "notes": "amazed",
+      "country": "Spain",
+      "position": {
+        "lat": "40.677340977086274",
+        "lng": "-2.7273459055134124"
+      }
+    }
+  ]
+}
