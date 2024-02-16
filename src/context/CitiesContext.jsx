@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useCallback, useContext, useEffect, useReducer } from "react";
 import PropTypes from 'prop-types';
 
 //create context
@@ -91,17 +91,17 @@ const CitiesProvider = ({ children }) => {
     }, []);
 
     //get single city data
-    const getCity = async (id) => {
+    const getCity = useCallback(async (id) => {
         try {
             dispatch({ type: 'loading' })
             const res = await fetch(`${BASE_URL}/cities/${id}`);
             const data = await res.json()
             dispatch({ type: 'city/loaded', payload: data })
-            console.log(data);
+            // console.log(data);
         } catch (error) {
             dispatch({ type: 'error', payload: error })
         }
-    }
+    }, [])
 
     //update the city
     const addNewCity = async (city) => {

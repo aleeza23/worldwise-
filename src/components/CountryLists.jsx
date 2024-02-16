@@ -3,11 +3,12 @@ import styles from '../styles/CountryList.module.css'
 import PropTypes from 'prop-types';
 
 const CountryLists = () => {
-    const {cities } = useCities()
+    const { data } = useCities()
+    // console.log(data);
 
     //remove duplicate countries from countries array
     const countries = []
-    let uniqueElm = cities?.map((elm) => {
+    let uniqueElm = data?.map((elm) => {
         if (!countries.map((el) => el.country).includes(elm.country)) {
             return countries.push(elm)
         } else {
